@@ -20,7 +20,7 @@ namespace ConsoleApp_Noite.Heranca
             }
             else
             {
-                return numeroAssentos + " " + numeroPortas;
+                return "Assentos: "+numeroAssentos + ", Nº Portas: " + numeroPortas;
             }
             
          }

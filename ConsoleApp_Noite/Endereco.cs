@@ -25,18 +25,6 @@ namespace ConsoleApp_Noite
             Estado = estado;
         }
 
-        public string EnderecoCompleto()
-        {
-            return Rua+ ", "+ Numero + " Bairro:"+ Bairro + "Cep:"+"";
-
-        }
-        public string EstadoPorCidade(string cidade) 
-        {
-            if
-        
-        }
-
-        public 
 
         public string getRua()
         {
