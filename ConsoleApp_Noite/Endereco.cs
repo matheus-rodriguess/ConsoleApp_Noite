@@ -72,7 +72,11 @@ namespace ConsoleApp_Noite
         {
             Estado = estado;
         }
+        public string EnderecoCompleto()
+        {
+            return Rua + ", " + Numero + " Bairro:" + Bairro + " Cidade: " + Cidade + "/" + Estado;
 
+        }
 
 
 

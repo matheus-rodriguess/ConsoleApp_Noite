@@ -72,12 +72,54 @@ Bike speed = new Bike();
 speed.temMotor = false;
 speed.numeroPortas = 0;
 
+//Faça uma ação chamada ExibirDados e mostre as informações na tela pelo Console.Writeline
 Console.WriteLine(speed.ExibirDados());
 Console.WriteLine(gol.ExibirDados());
 
- 
+List<Carro> listaCarros = new List<Carro>();
+listaCarros.Add(gol);
+listaCarros.Add(Palio);
+listaCarros.Add(Uno);
+listaCarros.Add(Saveiro);
 
-//Faça uma ação chamada ExibirDados e mostre as informações na tela pelo Console.Writeline
+Console.WriteLine(listaCarros[0].fabricante);
+listaCarros.Remove(Palio);
+
+for(int i = 0; i < listaCarros.Count; i++)
+{
+    Console.WriteLine(listaCarros[i].ExibirDados());
+}
+foreach(var item in listaCarros)
+{
+    Console.WriteLine(item.ExibirMarca());
+}
+
+//Imprima na tela todos os clientes desse contexto;
+//Dica crie uma lista para eles
+//Crie uma lista com 560 produtos e imprima na tela
+//Crie uma lista que aceite qualquer tipo de veiculo e imprima na tela
+
+List<Cliente> listaCliente = new List<Cliente>();
+listaCliente.Add(c1);
+listaCliente.Add(c2);
+listaCliente.Add(c3);
+listaCliente.Add(c4);
+listaCliente.Add(c5);
+    
+
+for(int i = 0;i < listaCliente.Count; i++)
+{
+    Console.WriteLine(listaCliente[i].DadosCliente());
+}
+
+List<Produto> listaProduto = new List<Produto>();
+for(int i = 1; i <= 10; i++)
+{
+    Produto p = new Produto(i, i * 2 + 2, "Descrição Produto: " + i);
+    listaProduto.Add(p);
+   
+}
+
 
 
 

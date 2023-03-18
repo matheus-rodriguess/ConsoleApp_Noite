@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ConsoleApp_Noite.Heranca;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,8 +55,14 @@ namespace ConsoleApp_Noite
         {
             return Endereco;
         }
-    
+       
+        public string DadosCliente()
+        {
+            return "Id: " + Id + " Nome: " + Nome + ", Endereço: " + Endereco.EnderecoCompleto();
+        }
     }
 
-        
 }
+
+        
+
