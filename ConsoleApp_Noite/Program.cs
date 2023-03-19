@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Noite;
 using ConsoleApp_Noite.Heranca;
-
+/*
 Produto p1 = new Produto(1,10.90M, "Cervejinha");
 
 Console.WriteLine(p1.getDescricao()+" "+p1.getId());
@@ -10,7 +10,7 @@ p1.setValor(11.85M);
 p1.setDescricao("Cerveja Skol 1 litrão");
 
 Console.WriteLine(p1.getDescricao() + " " + p1.getId() + " " + p1.getValor());
-
+*/
 Endereco endereco = new Endereco(
     "Rua Mario Miziara",
     "91",
@@ -99,29 +99,41 @@ foreach(var item in listaCarros)
 //Crie uma lista com 560 produtos e imprima na tela
 //Crie uma lista que aceite qualquer tipo de veiculo e imprima na tela
 
+Console.WriteLine("\n----------------------------------------------------------\n");
+
 List<Cliente> listaCliente = new List<Cliente>();
 listaCliente.Add(c1);
 listaCliente.Add(c2);
 listaCliente.Add(c3);
 listaCliente.Add(c4);
 listaCliente.Add(c5);
-    
+ 
 
 for(int i = 0;i < listaCliente.Count; i++)
 {
     Console.WriteLine(listaCliente[i].DadosCliente());
 }
+Console.WriteLine("\n----------------------------------------------------------\n");
 
 List<Produto> listaProduto = new List<Produto>();
 for(int i = 1; i <= 10; i++)
 {
-    Produto p = new Produto(i, i * 2 + 2, "Descrição Produto: " + i);
+    Produto p = new Produto(i, i * 4 + 2, "----------------------- ");
     listaProduto.Add(p);
+    Console.WriteLine("Id: "+p.getId()+", Preço: "+p.getValor()+", Descrição do Produto: "+p.getDescricao());
     
         
 }
 
+Console.WriteLine("\n----------------------------------------------------------\n");
 
+List<Veiculo> listaVeiculos = new List<Veiculo>();
+listaVeiculos.Add(new Veiculo());
+listaVeiculos.Add(new Veiculo());
+foreach (var item in listaVeiculos)
+{
+    Console.WriteLine(item.ExibirDados());
+}
 
 
 
