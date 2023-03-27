@@ -142,20 +142,22 @@ Imprima na tela a lista de produtos , o Id da venda e a Data da venda.*/
 
 Console.WriteLine("\n----------------------------------------------------------\n");
 
+
 List<Vendas> listaVendas = new List<Vendas>();
 
 Vendas v1 = new Vendas(1, "27/03/2023");
 
+Console.WriteLine("Lista de Produtos: ");
 for (int i = 0; i < listaProduto.Count; i++)
 {
     Console.WriteLine(listaProduto[i].DadosProduto());
 }
+listaVendas.Add(v1);
 
 foreach (var items in listaVendas)
 {
-    Console.WriteLine("Id da venda: " + v1.getIdVenda() + "Data da Venda: " + v1.getDataVenda());
+    Console.WriteLine("Id da venda: " + v1.getIdVenda() + ", Data da Venda: " + v1.getDataVenda());
 }
-
 
 
 
