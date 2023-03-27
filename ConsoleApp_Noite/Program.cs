@@ -118,7 +118,7 @@ for(int i = 0;i < listaCliente.Count; i++)
 Console.WriteLine("\n----------------------------------------------------------\n");
 
 List<Produto> listaProduto = new List<Produto>();
-for(int i = 1; i <= 10; i++)
+for(int i = 1; i <= 560; i++)
 {
     Produto p = new Produto(i, i * 4 + 2, "----------------------- ");
     listaProduto.Add(p);
