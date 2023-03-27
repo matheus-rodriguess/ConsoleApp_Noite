@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Noite;
 using ConsoleApp_Noite.Heranca;
+using System.Runtime.Intrinsics;
+using System.Runtime.Intrinsics.X86;
 /*
 Produto p1 = new Produto(1,10.90M, "Cervejinha");
 
@@ -134,6 +136,28 @@ foreach (var item in listaVeiculos)
 {
     Console.WriteLine(item.ExibirDados());
 }
+
+/* Crie uma classe vendas com uma lista de produtos comprada por um cliente
+Imprima na tela a lista de produtos , o Id da venda e a Data da venda.*/
+
+Console.WriteLine("\n----------------------------------------------------------\n");
+
+List<Vendas> listaVendas = new List<Vendas>();
+
+Vendas v1 = new Vendas(1, "27/03/2023");
+
+for (int i = 0; i < listaProduto.Count; i++)
+{
+    Console.WriteLine(listaProduto[i].DadosProduto());
+}
+
+foreach (var items in listaVendas)
+{
+    Console.WriteLine("Id da venda: " + v1.getIdVenda() + "Data da Venda: " + v1.getDataVenda());
+}
+
+
+
 
 
 

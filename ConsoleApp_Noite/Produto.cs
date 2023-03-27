@@ -46,5 +46,9 @@ namespace ConsoleApp_Noite
         {
             Descricao = descricao;
         }
+        public string DadosProduto()
+        {
+            return ("Id: " + Id + ", Valor: " + Valor + ", Descricao: " + Descricao);
+        }
     }
 }
