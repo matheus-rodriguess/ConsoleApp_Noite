@@ -147,7 +147,7 @@ List<Vendas> listaVendas = new List<Vendas>();
 
 Vendas v1 = new Vendas(1, "27/03/2023");
 
-Console.WriteLine("Lista de Produtos: ");
+Console.WriteLine("Lista de Produtos compra por um cliente: ");
 for (int i = 0; i < listaProduto.Count; i++)
 {
     Console.WriteLine(listaProduto[i].DadosProduto());
