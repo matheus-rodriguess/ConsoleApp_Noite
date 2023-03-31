@@ -147,10 +147,11 @@ for (int i = 1; i <= 10; i++)
 {
     Produto p2 = new Produto(i, i * 4 + 2, "----------------------- ");
     listaProduto2.Add(p2);
-    Console.WriteLine("Id: " + p2.getId() + ", Preço: " + p2.getValor() + ", Descrição do Produto: " + p2.getDescricao());
+   //Console.WriteLine("Id: " + p2.getId() + ", Preço: " + p2.getValor() + ", Descrição do Produto: " + p2.getDescricao());
 
 
 }
+
 
 List<Vendas> listaVendas = new List<Vendas>();
 
@@ -161,13 +162,13 @@ for (int i = 0; i < listaProduto2.Count; i++)
 {
     Console.WriteLine(listaProduto2[i].DadosProduto());
 }
+
 listaVendas.Add(v1);
 
 foreach (var items in listaVendas)
 {
     Console.WriteLine("Id da venda: " + v1.getIdVenda() + ", Data da Venda: " + v1.getDataVenda());
 }
-
 
 
 
